@@ -1,1 +1,18 @@
+version: '3'
 
+services:
+
+ waf:
+    image: owasp/modsecurity-crs:nginx
+    ports:
+      - "8080:80"
+    environment:
+      - PROXY=1
+      -UPSTREAM=http://app:80
+    depends_on:
+    - app
+
+    app:
+        build: ./app
+        ports:
+          - "9090:80"
