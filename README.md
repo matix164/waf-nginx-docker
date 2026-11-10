@@ -1,5 +1,7 @@
-Projekt demonstruje działanie Web Application Firewall (ModSecurity + reguły OWASP) na serwerze Nginx. Środowisko jest zarządzane przez Vagrant i uruchamiane w kontenerach Docker.
-
+Wymagane narzędzia żeby odpalić projekt:
+1. Virtualbox,
+2. Vagrant.
+ 
  Szybkie uruchomienie
 1. Wejdź do folderu z projektem w konsoli (CMD).
 2. Wpisz komendę: `vagrant up`
