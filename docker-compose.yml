@@ -10,7 +10,7 @@ services:
       - PROXY=1
       -UPSTREAM=http://app:80
     depends_on:
-    - app
+     - app
 
     app:
         build: ./app
