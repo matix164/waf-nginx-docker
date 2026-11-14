@@ -1,5 +1,5 @@
 <?php
-echo "<h1>Test ataku Command Injection</h1>";
+echo "<h1>Test ataku na strone2</h1>";
 if(isset($_GET['ip'])) {
     echo "<pre>";
     system("ping -c 1 " . $_GET['ip']);
