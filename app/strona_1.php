@@ -1,9 +1,9 @@
 <?php
-echo "<h1>Test ataku na Strone1</h1>";
+echo "<h1>Wyszukiwarka użytkowników</h1>";
 
 if(isset($_GET['imie'])) {
-    echo "<p>Witaj, " . $_GET['imie'] . "</p>";
+    echo "<p>Wyniki wyszukiwania dla: " . $_GET['imie'] . "</p>";
 } else {
-    echo "<p>Dopisz do adresu URL: ?imie=&lt;script&gt;alert('strona_1')&lt;/script&gt;</p>";
+    echo "<p>Podaj imię w adresie URL (?imie=...)</p>";
 }
 ?>
