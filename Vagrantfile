@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
     v.cpus = 2
     v.gui = false
   end
-  
+  # //** Kod wygenerowany przy pomocy sztucznej intiligencji **//
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
     apt-get install -y docker.io docker-compose
@@ -17,3 +17,4 @@ Vagrant.configure("2") do |config|
     docker-compose up -d
   SHELL
 end
+# //** Koniec Kodu **//
